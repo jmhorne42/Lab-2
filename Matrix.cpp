@@ -14,6 +14,8 @@ Matrix::Matrix(int r, int c)
    {
       rows = 1;
    }
+   
+   //comment
 
    if (c < 1)
    {
