@@ -1,7 +1,7 @@
 #include "WriteFile.h"
 #include <sstream>
 
-
+/*
 WriteFile* createWriteFile(const char* file_name)
 {
    WriteFile* wf = new WriteFile;
@@ -32,8 +32,8 @@ void writeLine(WriteFile* wf, String* line)
       wf->output_file << line->getText() << endl;
    }
 }
-/*
 
+*/
 
 WriteFile::WriteFile(){
     
@@ -69,4 +69,3 @@ void WriteFile::close(WriteFile *wf){
       wf->closed = true;
    }
 }
-*/
