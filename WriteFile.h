@@ -7,8 +7,8 @@
 using namespace std;
 
 
-
 /*
+
 struct WriteFile
 {
    ofstream output_file;
@@ -22,6 +22,8 @@ void close(WriteFile* wf);
 
 */
 
+
+
 class WriteFile{
    
    private:
@@ -29,13 +31,14 @@ class WriteFile{
       bool closed;
       
    public:
-      WriteFile();
+      WriteFile(const char* file_name);
       ~WriteFile();
-      WriteFile* createWriteFile(const char* file_name);
-      void destroyWriteFile(WriteFile* wf);
+      //WriteFile* createWriteFile(const char* file_name);
+      //void destroyWriteFile(WriteFile* wf);
       void writeLine(WriteFile* wf, String* line);
       void close(WriteFile* wf);
       
 };
+
 
 #endif

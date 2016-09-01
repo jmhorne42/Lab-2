@@ -35,14 +35,18 @@ void writeLine(WriteFile* wf, String* line)
 
 */
 
-WriteFile::WriteFile(){
-    
+
+
+WriteFile::WriteFile(const char* file_name){
+   
 }
 
 WriteFile::~WriteFile(){
-    
+   
 }
 
+
+/*
 WriteFile* WriteFile::createWriteFile(const char* file_name){
     WriteFile* wf = new WriteFile;
     wf->output_file.open(file_name);
@@ -54,6 +58,8 @@ void WriteFile::destroyWriteFile(WriteFile *wf){
     close(wf);
     delete wf;
 }
+*/
+
 
 void WriteFile::writeLine(WriteFile *wf, String *line){
     if (!wf->closed && line->length() > 0)
